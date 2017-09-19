@@ -1,8 +1,8 @@
 <?php
 /** 
  * Configuración básica de WordPress.
- *
- * Este archivo contiene las siguientes configuraciones: ajustes de MySQL, prefijo de tablas,
+ *d
+ *s Este archivo contiene las siguientes configuraciones: ajustes de MySQL, prefijo de tablas,
  * claves secretas, idioma de WordPress y ABSPATH. Para obtener más información,
  * visita la página del Codex{@link http://codex.wordpress.org/Editing_wp-config.php Editing
  * wp-config.php} . Los ajustes de MySQL te los proporcionará tu proveedor de alojamiento web.
@@ -25,7 +25,7 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', 'root');
 
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '172.18.0.5');
 
 /** Codificación de caracteres para la base de datos. */
 define('DB_CHARSET', 'utf8');
@@ -61,6 +61,7 @@ define('NONCE_SALT', 'qwertyQWERTY22#'); // Cambia esto por tu frase aleatoria.
  */
 $table_prefix  = 'wp_';
 
+define('FS_METHOD', 'direct');
 
 /**
  * Para desarrolladores: modo debug de WordPress.
